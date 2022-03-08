@@ -14,7 +14,7 @@
   },
 
   "license": "BSD-3-Clause",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/firstmod/icon.png",
 
   "environment": "*",
   "entrypoints": {
