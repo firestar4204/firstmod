@@ -24,6 +24,8 @@ public class FirstMod implements ModInitializer {
 
 	public static final Block MUD_BLOCK = new Block(FabricBlockSettings.of(Material.SOIL).strength(5.0F, 5.0F).sounds(BlockSoundGroup.GRAVEL));
 	
+	public static final Item DRIED_MUD_BALL = new Item(new Item.Settings().group(ItemGroup.FOOD).food(MudFoodComponents.DRIED_MUD_BALL));
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -33,6 +35,7 @@ public class FirstMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("firstmod", "mud_ball"), MUD_BALL);
 		Registry.register(Registry.BLOCK, new Identifier("firstmod", "mud_block"), MUD_BLOCK);
 		Registry.register(Registry.ITEM, new Identifier("firstmod", "mud_block"), new BlockItem(MUD_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+		Registry.register(Registry.ITEM, new Identifier("firstmod", "dried_mud_ball"), DRIED_MUD_BALL);
 
 		LOGGER.info("FirstMod initialized.");
 	}
