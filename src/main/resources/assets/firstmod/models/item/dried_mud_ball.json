@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "firstmod:item/dried_mud_block"
+        "layer0": "firstmod:item/dried_mud_ball"
     }
 }
