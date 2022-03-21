@@ -1,3 +1,3 @@
 # Firestar4204's FirstMod
 
-Placeholder text for eventual docs.
+A mod that adds various mud to the game (minecraft).  Adds nothing actually useful.
