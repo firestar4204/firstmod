@@ -1,0 +1,4 @@
+run = "./gradlew build"
+
+[nix]
+channel = "stable-21_11"
