@@ -41,15 +41,15 @@ public class FirstMod implements ModInitializer {
 	public static final Block MUD_ORE = new MudOreBlock(FabricBlockSettings.copy(Blocks.STONE));
 
 	private static ConfiguredFeature<?, ?> ORE_MUD_OVERWORLD = Feature.ORE
-    	.configure(new OreFeatureConfig(
-      		OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
-      		FirstMod.MUD_ORE.getDefaultState(),
-      		9)) // Vein size
-    	.range(new RangeDecoratorConfig(
+    		.configure(new OreFeatureConfig(
+      			OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
+      			FirstMod.MUD_ORE.getDefaultState(),
+      			9)) // Vein size
+    		.range(new RangeDecoratorConfig(
       		// You can also use one of the other height providers if you don't want a uniform distribution
-      		UniformHeightProvider.create(YOffset.aboveBottom(0), YOffset.fixed(64)))) // Inclusive min and max height
-    	.spreadHorizontally()
-    	.repeat(20);
+      			UniformHeightProvider.create(YOffset.aboveBottom(0), YOffset.fixed(64)))) // Inclusive min and max height
+    		.spreadHorizontally()
+    		.repeat(20);
 
 	@Override
 	public void onInitialize() {
@@ -65,8 +65,8 @@ public class FirstMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("firstmod", "mud_ore"), new BlockItem(MUD_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
 		RegistryKey<ConfiguredFeature<?, ?>> oreWoolOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier("tutorial", "ore_wool_overworld"));
-    	Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreWoolOverworld.getValue(), ORE_MUD_OVERWORLD);
-    	BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreWoolOverworld);
+    		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreWoolOverworld.getValue(), ORE_MUD_OVERWORLD);
+    		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreWoolOverworld);
 		FIRSTMOD.info("FirstMod initialized.");
 	}
 }
