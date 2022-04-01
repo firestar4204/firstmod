@@ -1,6 +1,5 @@
 package io.github.firestar4204.firstmod.mixin;
 
-import io.github.firestar4204.firstmod.FirstMod;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
