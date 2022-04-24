@@ -67,6 +67,6 @@ public class FirstMod implements ModInitializer {
 		RegistryKey<ConfiguredFeature<?, ?>> oreWoolOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier("tutorial", "ore_wool_overworld"));
     		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreWoolOverworld.getValue(), ORE_MUD_OVERWORLD);
     		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreWoolOverworld);
-		FIRSTMOD.info("FirstMod initialized.");
+		FIRSTMOD.info("FirstMod initialized.  Prepare to mud the world.");
 	}
 }

@@ -1,5 +1,6 @@
 package io.github.firestar4204.firstmod.mixin;
 
+import io.github.firestar4204.firstmod.FirstMod;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -10,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class FirstMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
-		// TODO: Implement something here
+		FirstMod.FIRSTMOD.info("FirstMod Mixin printed this message.");
 	}
 }
