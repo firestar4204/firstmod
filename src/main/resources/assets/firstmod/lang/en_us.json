@@ -1,0 +1,11 @@
+{
+    "itemGroup.firstmod.items": "FirstMod Items",
+    
+    "item.firstmod.mud_ball": "Mud Ball",
+    "item.firstmod.dried_mud_ball": "Dried Mud Ball",
+    "item.firstmod.mud_block": "Mud Block",
+    "item.firstmod.mud_ore": "Mud Ore",
+
+    "block.firstmod.mud_block": "Mud Block",
+    "block.firstmod.mud_ore": "Mud Ore"
+}
